@@ -8,7 +8,6 @@ class FilmList extends Component {
     })
     return(
       <div className="film-list">
-        <h2>Upcomming film releases for the UK</h2>
         <ul>
           {filmNodes}
         </ul>
