@@ -4,7 +4,7 @@ class Upcomming extends Component {
   render() {
     return(
       <div className='upcomming'>
-        <a href="https://www.imdb.com/calendar/?region=gb">View more upcomming releases</a>
+        <a href={this.props.url}>{this.props.title}</a>
       </div>
     )
   }

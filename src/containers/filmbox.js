@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import Header from '../components/header'
 import FilmList from '../components/filmlist'
 import Upcomming from '../components/upcoming'
 
@@ -38,9 +39,9 @@ class FilmBox extends Component {
   render() {
     return(
       <div className='film-box'>
-        <h2>Upcomming film releases for the UK</h2>
+        <Header title="Upcomming film releases for the UK" />
         <FilmList data={this.state.data} />
-        <Upcomming />
+        <Upcomming title="View more upcomming releases" url="https://www.imdb.com/calendar/?region=gb" />
       </div>
     )
   }
